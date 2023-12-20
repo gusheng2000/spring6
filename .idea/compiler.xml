@@ -8,13 +8,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="factory-method" />
-        <module name="myspring-test" />
-        <module name="review-flect" />
         <module name="spring6-007-circular-dependency" />
         <module name="spring6-003-dependency-injection" />
         <module name="spring6-002-first" />
         <module name="spring6-006-bean-lifecycle" />
-        <module name="myspring" />
         <module name="spring6-005-bean-instantiation" />
         <module name="spring6-001-revelation" />
       </profile>
@@ -23,6 +20,7 @@
       <module name="factory-method" target="1.5" />
       <module name="myspring" target="17" />
       <module name="myspring-test" target="17" />
+      <module name="review-annotation" target="17" />
       <module name="review-flect" target="17" />
       <module name="simple-factory" target="1.5" />
       <module name="spring6" target="17" />

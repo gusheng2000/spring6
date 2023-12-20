@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/factory-method.iml" filepath="$PROJECT_DIR$/factory-method.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myspring.iml" filepath="$PROJECT_DIR$/myspring.iml" />
-      <module fileurl="file://$PROJECT_DIR$/myspring-test.iml" filepath="$PROJECT_DIR$/myspring-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/review-flect.iml" filepath="$PROJECT_DIR$/review-flect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring/myspring.iml" filepath="$PROJECT_DIR$/myspring/myspring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myspring-test/myspring-test.iml" filepath="$PROJECT_DIR$/myspring-test/myspring-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review-annotation.iml" filepath="$PROJECT_DIR$/review-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/review-flect/review-flect.iml" filepath="$PROJECT_DIR$/review-flect/review-flect.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-factory.iml" filepath="$PROJECT_DIR$/simple-factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring6.iml" filepath="$PROJECT_DIR$/spring6.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring6-001-revelation/spring6-001-revelation.iml" filepath="$PROJECT_DIR$/spring6-001-revelation/spring6-001-revelation.iml" />
