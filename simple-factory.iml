@@ -5,8 +5,6 @@
     <output-test url="file://$MODULE_DIR$/simple-factory/target/test-classes" />
     <content url="file://$MODULE_DIR$/simple-factory">
       <sourceFolder url="file://$MODULE_DIR$/simple-factory/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/simple-factory/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/simple-factory/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/simple-factory/target" />
     </content>
     <content url="file://$MODULE_DIR$/simple-factory">

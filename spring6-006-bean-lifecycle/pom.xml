@@ -9,29 +9,33 @@
 
   <name>spring6-006-bean-lifecycle</name>
   <url>http://maven.apache.org</url>
-
+  <parent>
+    <groupId>com.shichong</groupId>
+    <artifactId>spring6</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
-  <repositories>
-    <repository>
-      <id>repository.spring.milestone</id>
-      <name>Spring Milestone Repository</name>
-      <url>https://repo.spring.io/milestone</url>
-    </repository>
-  </repositories>
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>6.0.0-M2</version>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.13.2</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+<!--  <repositories>-->
+<!--    <repository>-->
+<!--      <id>repository.spring.milestone</id>-->
+<!--      <name>Spring Milestone Repository</name>-->
+<!--      <url>https://repo.spring.io/milestone</url>-->
+<!--    </repository>-->
+<!--  </repositories>-->
+<!--  <dependencies>-->
+<!--    <dependency>-->
+<!--      <groupId>org.springframework</groupId>-->
+<!--      <artifactId>spring-context</artifactId>-->
+<!--      <version>6.0.0-M2</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>junit</groupId>-->
+<!--      <artifactId>junit</artifactId>-->
+<!--      <version>4.13.2</version>-->
+<!--      <scope>test</scope>-->
+<!--    </dependency>-->
+<!--  </dependencies>-->
 </project>

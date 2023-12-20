@@ -17,8 +17,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
-      <module name="factory-method" target="17" />
-      <module name="simple-factory" target="17" />
+      <module name="factory-method" target="1.5" />
+      <module name="simple-factory" target="1.5" />
+      <module name="spring6" target="17" />
       <module name="spring6-001-revelation" target="17" />
       <module name="spring6-002-first" target="17" />
       <module name="spring6-003-dependency-injection" target="17" />
