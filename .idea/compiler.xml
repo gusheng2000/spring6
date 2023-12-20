@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <option name="BUILD_PROCESS_HEAP_SIZE" value="1500" />
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="factory-method" />
+        <module name="spring6-007-circular-dependency" />
+        <module name="spring6-003-dependency-injection" />
+        <module name="spring6-002-first" />
+        <module name="spring6-006-bean-lifecycle" />
+        <module name="spring6-005-bean-instantiation" />
+        <module name="spring6-001-revelation" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="factory-method" target="17" />
+      <module name="simple-factory" target="17" />
+      <module name="spring6-001-revelation" target="17" />
+      <module name="spring6-002-first" target="17" />
+      <module name="spring6-003-dependency-injection" target="17" />
+      <module name="spring6-005-bean-instantiation" target="17" />
+      <module name="spring6-006-bean-lifecycle" target="17" />
+      <module name="spring6-007-circular-dependency" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

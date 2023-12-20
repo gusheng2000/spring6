@@ -1,0 +1,6 @@
+com\shichong\spring6\web\UserAction.class
+com\shichong\spring6\dao\impl\UserDaoImpl.class
+com\shichong\spring6\client\Test.class
+com\shichong\spring6\sersvice\impl\UserServiceImpl.class
+com\shichong\spring6\dao\UserDao.class
+com\shichong\spring6\sersvice\UserService.class

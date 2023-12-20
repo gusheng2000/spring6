@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--在prototype+setter模式下的循环依赖，存在间题，会出现异常！-->
+    <!--BeanCurrentlyInCreationException当前Bean正在处于创建中异常。。。-->
+    <!--注意：当两个bean的scope都是prototype的时候，才会出现异常。如果其中任意一个是singleton的，就不会出现异常。-->
+
+        <bean id="wife" class="com.shichong.bean.Wife" scope="singleton">
+            <property name="husBand" ref="husBand"/>
+            <property name="name" value="lisa"/>
+        </bean>
+
+        <bean id="husBand" class="com.shichong.bean.HusBand" scope="singleton">
+            <property name="name" value="john"/>
+            <property name="wife" ref="wife"/>
+        </bean>
+
+    </beans>
