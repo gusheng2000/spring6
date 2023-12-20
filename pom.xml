@@ -15,6 +15,9 @@
         <module>spring6-005-bean-instantiation</module>
         <module>spring6-006-bean-lifecycle</module>
         <module>spring6-007-circular-dependency</module>
+        <module>review-flect</module>
+        <module>myspring</module>
+        <module>myspring-test</module>
 
     </modules>
     <name>spring6</name>
@@ -54,10 +57,15 @@
     </dependencies>
     <!--  spring 里程碑版本依赖-->
     <repositories>
+<!--        <repository>-->
+<!--            <id>repository.spring.milestone</id>-->
+<!--            <name>Spring Milestone Repository</name>-->
+<!--            <url>https://repo.spring.io/milestone</url>-->
+<!--        </repository>-->
         <repository>
-            <id>repository.spring.milestone</id>
-            <name>Spring Milestone Repository</name>
-            <url>https://repo.spring.io/milestone</url>
+            <id>aliyunmaven</id>
+            <name>aliyun</name>
+            <url>https://maven.aliyun.com/repository/public</url>
         </repository>
     </repositories>
 

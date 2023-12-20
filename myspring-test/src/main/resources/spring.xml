@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="vip" class="com.shichong.Vip">
+        <property name="age" value="12"/>
+        <property name="name" value="shichong"/>
+        <property name="weight" value="2.22"/>
+    </bean>
+    <bean id="userDao" class="com.shichong.UserDao"/>
+    <bean id="userService" class="com.shichong.UserService">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+</beans>

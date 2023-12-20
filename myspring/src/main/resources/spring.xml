@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="user" class="com.shichong.bean.User">
+        <property name="name" value="shichong"/>
+        <property name="age" value="20"/>
+    </bean>
+
+    <bean id="userDao" class="com.shichong.bean.UserDao"/>
+    <bean id="userService" class="com.shichong.bean.UserService">
+        <property name="userDao" ref="userDao"/>
+    </bean>
+</beans>

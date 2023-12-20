@@ -2,17 +2,15 @@ package com.shichong;
 
 import com.shichong.bean.HusBand;
 import com.shichong.bean.Wife;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * 循环依赖模拟测试
- * Unit test for simple App.
- */
-
+ * @Author: shichong1008@outlook.com
+ * @Description: TODO
+ * @DateTime: 2023/12/20 17:28
+ **/
 public class AppTest {
     /**
      * 在单例模式下循环依赖
