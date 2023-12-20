@@ -50,7 +50,7 @@ public class ComponentScan {
                 }
             } catch (Exception e) {
                 e.printStackTrace();
-            } 
+            }
         });
         System.out.println(map);
     }

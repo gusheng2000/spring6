@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+<!--第一步 需要引入aop  第二步引入命名空间-->
+    <!--扫描那些包下面-->
+    <context:component-scan base-package="com.shichong.spring6.bean"/>
+    <!--扫面多个包 逗号隔开-->
+    <context:component-scan base-package="com.shichong.spring6.dao,com.shichong.spring6.bean"/>
+    <!--扫面多个包 扫描父包-->
+    <context:component-scan base-package="com.shichong.spring6"/>
+
+</beans>
