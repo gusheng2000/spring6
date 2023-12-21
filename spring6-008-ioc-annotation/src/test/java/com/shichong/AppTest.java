@@ -7,6 +7,7 @@ import com.shichong.spring6.bean3.Girl;
 import com.shichong.spring6.bean3.MyDataSource;
 import com.shichong.spring6.config.Spring6Config;
 import org.junit.Test;
+import org.shichong.spring6.service.UserService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -51,6 +52,14 @@ public class AppTest {
         ApplicationContext context = new AnnotationConfigApplicationContext(Spring6Config.class);
         Girl girl = context.getBean("girl", Girl.class);
         System.out.println(girl);
+    }
+
+    @Test
+    public void testAnnotationAutowiredTest(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring-Autowired-di.xml");
+        UserService service = context.getBean("userService", UserService.class);
+        System.out.println(service);
+        service.save();
     }
 
 }
