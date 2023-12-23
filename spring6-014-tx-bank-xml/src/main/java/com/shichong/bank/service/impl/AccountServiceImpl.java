@@ -4,15 +4,10 @@ import com.shichong.bank.dao.AccountDao;
 import com.shichong.bank.pojo.Account;
 import com.shichong.bank.service.AccountService;
 import jakarta.annotation.Resource;
-import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.PlatformTransactionManager;
-import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.transaction.support.DefaultTransactionDefinition;
-import org.springframework.transaction.support.TransactionTemplate;
 
 /**
  * @Author sc
@@ -44,7 +39,6 @@ public class AccountServiceImpl implements AccountService {
         NESTED: 有事务的话，就在这个事务里再嵌套一个完全独立的事务,嵌套的事务可以独立的提交和回滚。没有事务就和REQUIRED一样。】
         * */
     @Override
-    @Transactional(propagation = Propagation.REQUIRED)
     public void transfer(String fromActno, String toActno, double money) {
 
         Account fromAccount = accountDao.selectByActno(fromActno);
@@ -59,8 +53,8 @@ public class AccountServiceImpl implements AccountService {
 
         int update = accountDao.update(fromAccount);
         //模拟异常
-        String s = null;
-        s.toString();
+//        String s = null;
+//        s.toString();
         update += accountDao.update(toAccount);
         if (update != 2) {
             throw new RuntimeException("转账失败");
