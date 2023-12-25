@@ -8,6 +8,7 @@
     </parent>
 
     <artifactId>spring6-010-spring-aspectj-aop-anno</artifactId>
+    <description>spring AOP 注解学习 自定义注解</description>
     <packaging>jar</packaging>
 
     <name>spring6-010-spring-aspectj-aop-anno</name>
