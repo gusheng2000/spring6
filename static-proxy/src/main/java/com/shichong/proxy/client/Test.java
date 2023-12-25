@@ -24,7 +24,7 @@ public class Test {
             service.generate();
             service.modify();
         */
-
+                
         //优化三 静态代理
         OrderServiceImpl target = new OrderServiceImpl();
         //创建代理类

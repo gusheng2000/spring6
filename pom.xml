@@ -27,6 +27,7 @@
         <module>spring6-013-tx-bank</module>
         <module>spring6-014-tx-bank-xml</module>
         <module>spring6-016-sm</module>
+        <module>spring6-010-spring-aspectj-aop-anno</module>
 
     </modules>
     <name>spring6</name>
@@ -36,8 +37,8 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.version>6.0.9</spring.version>
     </properties>
-
 
     <dependencies>
         <!--log4j2的依赖-->
@@ -47,6 +48,31 @@
             <version>2.19.0</version>
         </dependency>
         <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>5.8.18</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
+        <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>2.19.0</version>
@@ -54,7 +80,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>6.1.0-M2</version>
+            <version>${spring.version}</version>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
@@ -74,11 +100,11 @@
             <artifactId>cglib</artifactId>
             <version>3.3.0</version>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.apache.logging.log4j</groupId>-->
-<!--            <artifactId>log4j-slf4j2-impl</artifactId>-->
-<!--            <version>2.19.0</version>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>org.apache.logging.log4j</groupId>-->
+        <!--            <artifactId>log4j-slf4j2-impl</artifactId>-->
+        <!--            <version>2.19.0</version>-->
+        <!--        </dependency>-->
     </dependencies>
     <!--  spring 里程碑版本依赖-->
     <repositories>
@@ -87,11 +113,11 @@
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
         </repository>
-<!--        <repository>
-            <id>aliyunmaven</id>
-            <name>aliyun</name>
-            <url>https://maven.aliyun.com/repository/public</url>
-        </repository>-->
+        <!--        <repository>
+                    <id>aliyunmaven</id>
+                    <name>aliyun</name>
+                    <url>https://maven.aliyun.com/repository/public</url>
+                </repository>-->
     </repositories>
 
 

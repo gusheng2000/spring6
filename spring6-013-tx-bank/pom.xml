@@ -19,17 +19,13 @@
 
     <dependencies>
         <!--spring context-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-            <version>6.0.0-M2</version>
-        </dependency>
+
         <!--spring jdbc-->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-jdbc</artifactId>
-            <version>6.0.0-M2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework</groupId>-->
+<!--            <artifactId>spring-jdbc</artifactId>-->
+<!--            <version>6.0.0-M2</version>-->
+<!--        </dependency>-->
         <!--mysql驱动-->
         <dependency>
             <groupId>mysql</groupId>
@@ -49,10 +45,10 @@
             <version>2.1.1</version>
         </dependency>
         <!--spring-aspacts-->
-        <dependency>
+  <!--      <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
             <version>6.0.0-M2</version>
-        </dependency>
+        </dependency>-->
     </dependencies>
 </project>
